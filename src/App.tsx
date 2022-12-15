@@ -3,8 +3,9 @@ import Issues from "./pages/Issues";
 import Issue from "./pages/Issue";
 import AddIssue from "./pages/AddIssue";
 
-function App() {
+const App = () => {
   const isRootPath = useMatch({ path: "/", end: true });
+
   return (
     <div className="App">
       {!isRootPath ? (
