@@ -1,9 +1,10 @@
 type IssueStatus = "backlog" | "todo" | "inProgress" | "done" | "cancelled";
+type IssueLabel = "bug" | "feature" | "enhancement" | "question" | "help" | "wontfix" | "duplicate";
 
 export type Issue = {
   id: string;
   title: string;
-  labels: string[];
+  labels: IssueLabel[];
   comments: string[];
   number: number;
   status: IssueStatus;

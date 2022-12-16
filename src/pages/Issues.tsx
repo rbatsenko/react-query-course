@@ -1,5 +1,6 @@
 import { IssuesList } from "../components/IssuesList";
-import LabelList from "../components/LabelList";
+import { LabelList } from "../components/LabelList";
+
 export const Issues = () => (
   <div>
     <main>
