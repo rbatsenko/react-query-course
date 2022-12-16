@@ -1,5 +1,5 @@
 import { Route, Routes, Link, useMatch } from "react-router-dom";
-import Issues from "./pages/Issues";
+import { Issues } from "./pages/Issues";
 import Issue from "./pages/Issue";
 import AddIssue from "./pages/AddIssue";
 
@@ -21,6 +21,6 @@ const App = () => {
       </Routes>
     </div>
   );
-}
+};
 
 export default App;
