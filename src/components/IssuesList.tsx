@@ -1,12 +1,8 @@
-import { useQuery } from "@tanstack/react-query";
-import { fetchData } from "../helpers/fetchData";
-import { Issue } from "../models/issues";
+import { useIssuesData } from "../hooks/useIssuesData";
 import { IssueItem } from "./IssueItem";
 
 export const IssuesList = () => {
-  const { isLoading, data } = useQuery<Issue[]>(["issues"], () =>
-    fetchData("/api/issues")
-  );
+  const { isLoading, data } = useIssuesData();
 
   return (
     <div>
