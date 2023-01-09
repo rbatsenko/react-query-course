@@ -1,5 +1,6 @@
-type IssueStatus = "backlog" | "todo" | "inProgress" | "done" | "cancelled";
-type IssueLabel = "bug" | "feature" | "enhancement" | "question" | "help" | "wontfix" | "duplicate";
+import { IssueLabel } from "./labels";
+
+type Status = "backlog" | "todo" | "inProgress" | "done" | "cancelled";
 
 export type Issue = {
   id: string;
@@ -7,7 +8,7 @@ export type Issue = {
   labels: IssueLabel[];
   comments: string[];
   number: number;
-  status: IssueStatus;
+  status: Status;
   createdDate: string;
   createdBy: string;
   assignee: string;
